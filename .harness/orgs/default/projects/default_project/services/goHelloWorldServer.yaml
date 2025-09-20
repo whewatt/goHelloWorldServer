@@ -11,7 +11,7 @@ service:
             - spec:
                 connectorRef: gohelloworldserver
                 imagePath: whewatt/gohelloworldserver
-                tag: <+input>
+                tag: <+trigger.artifact.build>
                 digest: ""
               identifier: gohelloworldserver
               type: DockerRegistry
