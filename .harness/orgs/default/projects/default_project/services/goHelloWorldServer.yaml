@@ -1,0 +1,20 @@
+service:
+  name: goHelloWorldServer
+  identifier: goHelloWorldServer
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: gohelloworldserver
+                imagePath: gohelloworldserver/latest
+                tag: <+input>
+                digest: ""
+              identifier: whewatt
+              type: DockerRegistry
+  gitOpsEnabled: false
+  orgIdentifier: default
+  projectIdentifier: default_project
