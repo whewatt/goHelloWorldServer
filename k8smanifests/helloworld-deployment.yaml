@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloworld-server
+spec:
+  replicas: 3
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: helloworld-server
+  template:
+    metadata:
+      labels:
+        app: helloworld-server
+    spec:
+      containers:
+      - image: docker.io/whewatt/gohelloworldserver:latest
+        name: helloworld-server
+        ports:
+        - containerPort: 80
