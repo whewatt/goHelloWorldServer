@@ -50,7 +50,7 @@ pipeline:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
-                    connectorRef: <+input>
+                    connectorRef: gohelloworldserver
                     repo: whewatt/gohelloworldserver
                     tags:
                       - latest
