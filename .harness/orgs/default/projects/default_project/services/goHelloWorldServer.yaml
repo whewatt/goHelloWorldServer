@@ -10,10 +10,10 @@ service:
           sources:
             - spec:
                 connectorRef: gohelloworldserver
-                imagePath: gohelloworldserver/latest
+                imagePath: whewatt/gohelloworldserver
                 tag: <+input>
                 digest: ""
-              identifier: whewatt
+              identifier: gohelloworldserver
               type: DockerRegistry
   gitOpsEnabled: false
   orgIdentifier: default
