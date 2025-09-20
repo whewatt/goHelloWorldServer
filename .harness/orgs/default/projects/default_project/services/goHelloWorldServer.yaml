@@ -26,7 +26,8 @@ service:
                   connectorRef: whewatt
                   gitFetchType: Branch
                   paths:
-                    - harnesscd-pipeline
+                    - k8smanifest/helloworld-deployment.yaml
+                    - k8smanifest/helloworld-service.yaml
                   branch: main
               skipResourceVersioning: false
               enableDeclarativeRollback: false
