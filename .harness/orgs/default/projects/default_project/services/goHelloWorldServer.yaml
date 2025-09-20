@@ -26,8 +26,8 @@ service:
                   connectorRef: whewatt
                   gitFetchType: Branch
                   paths:
-                    - k8smanifest/helloworld-deployment.yaml
-                    - k8smanifest/helloworld-service.yaml
+                    - k8smanifests/helloworld-deployment.yaml
+                    - k8smanifests/helloworld-service.yaml
                   branch: main
               skipResourceVersioning: false
               enableDeclarativeRollback: false
