@@ -15,6 +15,22 @@ service:
                 digest: ""
               identifier: gohelloworldserver
               type: DockerRegistry
+      manifests:
+        - manifest:
+            identifier: gohelloworldserverk8smanifest
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: whewatt
+                  gitFetchType: Branch
+                  paths:
+                    - harnesscd-pipeline
+                  branch: main
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+              optionalValuesYaml: false
   gitOpsEnabled: false
   orgIdentifier: default
   projectIdentifier: default_project
