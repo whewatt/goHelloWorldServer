@@ -16,5 +16,6 @@ spec:
       containers:
       - image: docker.io/whewatt/gohelloworldserver:latest
         name: helloworld-server
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
