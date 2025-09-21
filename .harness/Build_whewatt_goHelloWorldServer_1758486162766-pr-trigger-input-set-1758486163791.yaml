@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_whewatt_goHelloWorldServer_1758486162766-pr-trigger-input-set
+  identifier: Build_whewatt_goHelloWorldServer_1758486162766prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_whewatt_goHelloWorldServer_1758486162766
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
