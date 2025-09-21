@@ -4,14 +4,14 @@ import "testing"
 
 func TestGreetingSpecificJohn(t *testing.T) {
 	greeting := CreateGreeting("John")
-	if greeting != "Ola, John\n" {
+	if greeting != "Hello, John\n" {
 		t.Errorf("Greeting was incorrect, got: %s, want: %s.", greeting, "Hello, John\n")
 	}
 }
 
 func TestGreetingSpecificDemo(t *testing.T) {
 	greeting := CreateGreeting("Demo")
-	if greeting != "Ola, Demo\n" {
+	if greeting != "Hello, Demo\n" {
 		t.Errorf("Greeting was incorrect, got: %s, want: %s.", greeting, "Hello, Demo\n")
 	}
 }
