@@ -54,6 +54,7 @@ pipeline:
                     repo: whewatt/gohelloworldserver
                     tags:
                       - <+pipeline.sequenceId>
+                      - latest
                     caching: true
                   timeout: ""
                   type: BuildAndPushDockerRegistry
