@@ -53,7 +53,7 @@ pipeline:
                     connectorRef: gohelloworldserver
                     repo: whewatt/gohelloworldserver
                     tags:
-                      - latest
+                      - <+pipeline.sequenceId>
                     caching: true
                   timeout: ""
                   type: BuildAndPushDockerRegistry
