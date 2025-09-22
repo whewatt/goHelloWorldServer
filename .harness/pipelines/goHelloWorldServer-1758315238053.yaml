@@ -12,10 +12,11 @@ pipeline:
   stages:
     - stage:
         identifier: build
-        name: build
+        name: Build
         spec:
           caching:
             enabled: true
+            paths: []
           cloneCodebase: true
           execution:
             steps:
@@ -63,7 +64,10 @@ pipeline:
           runtime:
             spec: {}
             type: Cloud
+          buildIntelligence:
+            enabled: false
         type: CI
+        description: ""
     - stage:
         name: Deploy
         identifier: Deploy_Server
